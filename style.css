@@ -1,0 +1,46 @@
+:root {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: wheat;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(./images/clarisse-meyer-jKU2NneZAbI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-top: auto;
+    background-color: darkslategrey;
+
+}
+
+main {
+    background-color: wheat;
+    color: black;
+}
+
+footer {
+    margin-top: auto;
+    
+}
+
+
