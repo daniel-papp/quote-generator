@@ -39,3 +39,8 @@ function displayQuote() {
     quotePlace.innerText = randomQuote.quote;
     personPlace.innerText = randomQuote.person;
 }
+
+// Implementing New Quote button
+
+const newQuoteButton = document.querySelector('.new-quote-btn');
+newQuoteButton.addEventListener('click', displayQuote);
