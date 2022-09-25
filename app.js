@@ -18,7 +18,7 @@ function createNewQuote(quote, person) {
 
 createNewQuote('The journey of a thousand miles begins with one step.','Lao Tzu');
 createNewQuote('Tell me and I forget. Teach me and I remember. Involve me and I learn.', 'Benjamin Franklin');
-createNewQuote('Only a life lived for others is a life worthwhile', 'Albert Einstein');
+createNewQuote('Only a life lived for others is a life worthwhile.', 'Albert Einstein');
 createNewQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.', 'Winston S. Churchill');
 createNewQuote('An unexamined life is not worth living.', 'Socrates');
 
