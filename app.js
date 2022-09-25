@@ -44,3 +44,7 @@ function displayQuote() {
 
 const newQuoteButton = document.querySelector('.new-quote-btn');
 newQuoteButton.addEventListener('click', displayQuote);
+
+// Making the initial quote random
+
+displayQuote();
