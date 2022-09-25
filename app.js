@@ -36,8 +36,13 @@ function displayQuote() {
 
     const randomQuote = pickRandomQuote();
 
-    quotePlace.innerText = randomQuote.quote;
-    personPlace.innerText = randomQuote.person;
+    if (randomQuote.quote === quotePlace.innerText) {
+        displayQuote();
+    } else {
+        quotePlace.innerText = randomQuote.quote;
+        personPlace.innerText = randomQuote.person;
+    }
+
 }
 
 // Implementing New Quote button
