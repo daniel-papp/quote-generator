@@ -16,12 +16,25 @@
         <p class="quote">The journey of a thousand miles begins with one step.</p>
         <p class="person">Lao Tzu</p>
         <div class="button-container">
-            <button class="new-quote-btn">New Quote</button>
-            <button class="add-quote-btn">&plus;</button>
+            <button class="button new-quote-btn">New Quote</button>
+            <button class="button add-quote-btn">&plus;</button>
         </div>
     </main>
     <footer>
         <p>Background image from Clarisse Meyer on <a href="https://unsplash.com/@clarissemeyer" target="_blank">Unsplash</a></p>
     </footer>
+    <div class="modal" id="modal">
+        <form>
+            <div class="modal-header">
+                <h2>Add New Quote</h2>
+                <button type="button" id="close-btn">&times;</button>
+            </div>
+            <label for="quote">Quote:</label>
+            <textarea name="quote" id="quote" rows="10"></textarea>
+            <label for="person">From:</label>
+            <input type="text" name="person" id="person">
+            <button type="submit" class="button" id="submit-btn">Add Quote</button>
+        </form>
+    </div>
 </body>
 </html>

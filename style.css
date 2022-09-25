@@ -80,11 +80,12 @@ main .person {
     align-items: center;
 }
 
-main button {
+.button {
     background-color: rgb(50, 51, 51);
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 main button:hover {
@@ -96,7 +97,6 @@ main button:active {
 }
 
 main .new-quote-btn {
-    border-radius: 10px;
     width: 120px;
     font-size: 1rem;
     padding: 10px 15px;
@@ -107,7 +107,6 @@ main .add-quote-btn {
     font-size: 1.5rem;
     width: 30px;
     height: 30px;
-    border-radius: 10px;
     padding-bottom: 3px;
 }
 
@@ -121,4 +120,69 @@ footer a {
     color: white;
 }
 
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%) scale(0); */
+    background-color: #efefef;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: 5px 5px 5px 2px #181818;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin-left: auto;
+    font-size: 1.6rem;
+}
+
+#close-btn {
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: -25px;
+    margin-right: -15px;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkred;
+}
+
+.modal form label {
+    font-size: 1.4rem;
+    align-self: flex-start;
+    margin: 5px 2px;
+}
+
+.modal form textarea,
+.modal form input {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-width: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#submit-btn {
+    width: 120px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin-top: 25px;
+}
 
