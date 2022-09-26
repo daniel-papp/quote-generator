@@ -124,13 +124,18 @@ footer a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /* transform: translate(-50%, -50%) scale(0); */
+    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%) scale(0);
+    transition: 100ms all;
     background-color: #efefef;
     color: black;
     border-radius: 10px;
     padding: 15px 25px;
     box-shadow: 5px 5px 5px 2px #181818;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .modal form {

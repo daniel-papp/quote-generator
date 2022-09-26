@@ -50,6 +50,29 @@ function displayQuote() {
 const newQuoteButton = document.querySelector('.new-quote-btn');
 newQuoteButton.addEventListener('click', displayQuote);
 
+// Handling modal activation and deactivation
+
+function openModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.add('active');
+}
+
+const addQuoteButton = document.querySelector('.add-quote-btn');
+addQuoteButton.addEventListener('click', openModal);
+
+function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.remove('active');
+}
+
+const closeModalButton = document.querySelector('#close-btn');
+closeModalButton.addEventListener('click', closeModal);
+
+const submitButton = document.getElementById('submit-btn');
+submitButton.addEventListener('click', closeModal);
+
+
+
 // Making the initial quote random
 
 displayQuote();
