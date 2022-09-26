@@ -57,7 +57,7 @@ function openModal() {
     modal.classList.add('active');
 }
 
-const addQuoteButton = document.querySelector('.add-quote-btn');
+const addQuoteButton = document.querySelector('.open-btn');
 addQuoteButton.addEventListener('click', openModal);
 
 function closeModal() {
@@ -68,7 +68,7 @@ function closeModal() {
 const closeModalButton = document.querySelector('#close-btn');
 closeModalButton.addEventListener('click', closeModal);
 
-const submitButton = document.getElementById('submit-btn');
+const submitButton = document.getElementById('add-quote-btn');
 submitButton.addEventListener('click', closeModal);
 
 

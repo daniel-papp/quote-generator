@@ -103,7 +103,7 @@ main .new-quote-btn {
     margin: 0 20px;
 }
 
-main .add-quote-btn {
+main .open-btn {
     font-size: 1.5rem;
     width: 30px;
     height: 30px;
@@ -124,7 +124,6 @@ footer a {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
     transform: translate(-50%, -50%) scale(0);
     transition: 100ms all;
     background-color: #efefef;
@@ -184,7 +183,7 @@ footer a {
     margin-bottom: 15px;
 }
 
-#submit-btn {
+#add-quote-btn {
     width: 120px;
     font-size: 1rem;
     padding: 10px 15px;
