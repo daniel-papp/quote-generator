@@ -68,9 +68,24 @@ function closeModal() {
 const closeModalButton = document.querySelector('#close-btn');
 closeModalButton.addEventListener('click', closeModal);
 
-const submitButton = document.getElementById('add-quote-btn');
-submitButton.addEventListener('click', closeModal);
+const addButton = document.getElementById('add-quote-btn');
+// addButton.addEventListener('click', closeModal);
 
+// Adding new user defined quotes to the collection
+
+function addNewQuoteToCollection() {
+    const newQuote = document.getElementById('quote').value;
+    const newPerson = document.getElementById('person').value;
+
+    createNewQuote(newQuote, newPerson);
+
+    document.getElementById('quote').value = '';
+    document.getElementById('person').value = '';
+
+    closeModal();
+}
+
+addButton.addEventListener('click', addNewQuoteToCollection);
 
 
 // Making the initial quote random
