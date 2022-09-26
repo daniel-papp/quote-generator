@@ -63,19 +63,35 @@ addQuoteButton.addEventListener('click', openModal);
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.classList.remove('active');
+    clearErrorMessage('quote');
+    clearErrorMessage('person');
 }
 
 const closeModalButton = document.querySelector('#close-btn');
 closeModalButton.addEventListener('click', closeModal);
 
 const addButton = document.getElementById('add-quote-btn');
-// addButton.addEventListener('click', closeModal);
 
 // Adding new user defined quotes to the collection
 
 function addNewQuoteToCollection() {
     const newQuote = document.getElementById('quote').value;
     const newPerson = document.getElementById('person').value;
+
+    clearErrorMessage('quote');
+    clearErrorMessage('person');
+
+    if (newQuote === '' && newPerson === '') {
+        displayErrorMessage('quote');
+        displayErrorMessage('person');
+        return;
+    } else if (newQuote === '') {
+        displayErrorMessage('quote');
+        return;
+    } else if (newPerson === '') {
+        displayErrorMessage('person');
+        return;
+    }
 
     createNewQuote(newQuote, newPerson);
 
@@ -86,6 +102,24 @@ function addNewQuoteToCollection() {
 }
 
 addButton.addEventListener('click', addNewQuoteToCollection);
+
+// Error message 
+
+function displayErrorMessage(fieldName) {
+    const field = document.getElementById(fieldName);
+    const label = document.querySelector(`label[for=${fieldName}]`);
+    
+    field.classList.add('error-field');
+    label.classList.add('error-msg');
+}
+
+function clearErrorMessage(fieldName) {
+    const field = document.getElementById(fieldName);
+    const label = document.querySelector(`label[for=${fieldName}]`);
+    
+    field.classList.remove('error-field');
+    label.classList.remove('error-msg');
+}
 
 
 // Making the initial quote random

@@ -196,3 +196,17 @@ footer a {
     margin-top: 25px;
 }
 
+.error-field {
+    border: 2px solid red;
+}
+
+.error-msg::after {
+    display: block;
+    content: "Please fill out this field!";
+    font-size: 0.8rem;
+    align-self: flex-start;
+    margin: 5px 2px;
+    color: red;
+    margin-bottom: -5px;
+}
+
