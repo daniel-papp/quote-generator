@@ -90,11 +90,11 @@ main .person {
     border-radius: 10px;
 }
 
-main button:hover {
+.button:hover {
     background-color: rgba(50, 51, 51, 0.8);
 }
 
-main button:active {
+.button:active {
     background-color: rgba(50, 51, 51);
 }
 
@@ -168,6 +168,10 @@ footer a {
     font-size: 2rem;
     font-weight: bold;
     color: darkred;
+}
+
+#close-btn:hover {
+    color: red;
 }
 
 .modal form label {
