@@ -55,6 +55,7 @@ main {
 main .quote {
     font-size: 1.4rem;
     text-align: center;
+    word-wrap: break-word;
 }
 
 main .quote::before {
@@ -71,6 +72,7 @@ main .person {
     color: darkred;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 
 .button-container {
