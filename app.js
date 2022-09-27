@@ -54,7 +54,10 @@ newQuoteButton.addEventListener('click', displayQuote);
 
 function openModal() {
     const modal = document.getElementById('modal');
+    const overlay = document.getElementsByClassName('overlay');
+
     modal.classList.add('active');
+    overlay[0].classList.toggle('active');
 }
 
 const addQuoteButton = document.querySelector('.open-btn');
@@ -62,7 +65,11 @@ addQuoteButton.addEventListener('click', openModal);
 
 function closeModal() {
     const modal = document.getElementById('modal');
+    const overlay = document.getElementsByClassName('overlay');
+
     modal.classList.remove('active');
+    overlay[0].classList.toggle('active');
+
     clearErrorMessage('quote');
     clearErrorMessage('person');
 }
