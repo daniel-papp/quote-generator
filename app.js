@@ -128,6 +128,13 @@ function clearErrorMessage(fieldName) {
     label.classList.remove('error-msg');
 }
 
+// About dropdown
+
+document.querySelector('.about').addEventListener('click', 
+    () => document.querySelector('.about').classList.toggle('active'));
+
+
+
 
 // Making the initial quote random
 
